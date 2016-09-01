@@ -56,10 +56,10 @@ class UrlMethods():
 
     #上传图片前生成multipart/form-data数据
     def url_multipart_formdata(self,files,fields,boundary=None):
-    '''Encode dict of form fields and dict of files as multipart/form-data.
-    Return tuple of (body_string, headers_dict). Each value in files is a dict
-    with required keys 'filename' and 'content', and optional 'mimetype' (if
-    not specified, tries to guess mime type or uses 'application/octet-stream').'''
+        '''Encode dict of form fields and dict of files as multipart/form-data.
+        Return tuple of (body_string, headers_dict). Each value in files is a dict
+        with required keys 'filename' and 'content', and optional 'mimetype' (if
+        not specified, tries to guess mime type or uses 'application/octet-stream').'''
         #大小写字母string.ascii_letters:The concatenation of the ascii_lowercase and ascii_uppercase constants described below. This value is not locale-dependent.
         #数字string.digits:The string '0123456789'.
         _BOUNDARY_CHARS=string.digits+string.ascii_letters
